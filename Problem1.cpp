@@ -48,7 +48,7 @@ public:
     do {
         if (current->remaining_time <= 0) { // condition to check if cpu procesess has completes its execution time
 
-            // If the CPU process now has only one process, then delete  tail to NULL
+            // If the CPU process now has only one process, then delete  tail and set to NULL
                 if (tail == tail->next) {
                     delete tail;
                     tail = NULL;
@@ -92,7 +92,8 @@ public:
                 current->remaining_time -= cpu_time; // to reduce the remaining time, by the time schedular assigns
                 if (current->remaining_time <= 0) {
                     cout << current->id << "(Completes),";
-                } else {
+                } 
+                else {
                     cout << current->id << "(Remaining: " << current->remaining_time << "),";
                 }
                 current = current->next;
@@ -125,7 +126,7 @@ public:
 
 int main() {
     CircularLinkedList processes;
-
+   // inserting initial processes
     processes.insert("p1", 10);
     processes.insert("p2", 5);
     processes.insert("p3", 8);
@@ -135,7 +136,7 @@ int main() {
     int cpu_time=3;
 
     cout << endl << "CPU Time per Process per Cycle: "<<cpu_time << endl<<endl;
-
+    // calling the cycles method
     processes.cycles(cpu_time);
     cout<<"All processes completes";
     return 0;

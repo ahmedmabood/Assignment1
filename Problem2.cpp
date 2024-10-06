@@ -72,6 +72,16 @@ public:
       }
           return remainder; 
     }
+    ~Linked(){ // free the memory space
+        Node *current = head;
+        while (current != NULL)
+        {
+            Node *nextNode = current->next;
+            delete current;
+            current = nextNode;
+        }
+        head = NULL;
+    }
 };
 
 int main(){
