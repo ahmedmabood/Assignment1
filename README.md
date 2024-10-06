@@ -4,7 +4,7 @@ assignment one of data structures and algorithm
 ## Approach
 
 #### problem 1
- I have create nodes of circular linked list which represents cpu processes and then add some cpu processes to circular linked list and assigns some fixed cpu time to each cpu process .And according to it the remaining time decreases and when it completes its execution time it is removed from circular linked list.And Also some new process randomly in any cycle.
+ I have create nodes of circular linked list which represents cpu processes and then add some cpu processes to circular linked list and assigns some fixed cpu time to each cpu process .And according to it the remaining time decreases and when it completes its execution time it is removed from circular linked list.And Also some new process occurs randomly in any cycle.
 
 #### problem 2
 
@@ -16,7 +16,7 @@ In this I have used single linked list in which nodes represents the 64-bit inte
 
  ## Github link
 
- [text](https://github.com/ahmedmabood/Assignment1.git)
+ [github link](https://github.com/ahmedmabood/Assignment1.git)
 
  ## Challenges
  #### problem 1
